@@ -11,14 +11,13 @@ public  class OpenState extends LiftState{
 
     @Override
     public void open() {
-        super.context.setLiftState(Context.openState);
-        super.context.getLiftState().open();
+        System.out.println("电梯门开启");
     }
 
     @Override
     public void close() {
         super.context.setLiftState(Context.closeState);
-        super.context.getLiftState().close();
+        super.context.close();
     }
 
     @Override
